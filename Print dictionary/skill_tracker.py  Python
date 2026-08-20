@@ -1,0 +1,19 @@
+import time
+
+# Create a list to store your daily progress
+python_topics = ["Print Statements", "For Loops", "User Input", "Conditionals"]
+
+# Add a new topic dynamically using .append()
+python_topics.append("Python Lists")
+
+print("--- MY PYTHON LEARNING PATH ---")
+print(f"Total Modules Completed: {len(python_topics)}\n")
+
+# Loop through the list with step numbers using enumerate()
+for index, topic in enumerate(python_topics, start=1):
+    time.sleep(0.3)
+    print(f"Module {index}: [✓] {topic}")
+
+# Accessing specific elements by index (0-indexed)
+print(f"\nFirst topic learned: {python_topics[0]}")
+print(f"Latest topic learned: {python_topics[-1]}")  # -1 gets the last item
