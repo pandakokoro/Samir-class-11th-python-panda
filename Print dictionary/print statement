@@ -1,1 +1,5 @@
+import time
 
+for i in range(1, 6):
+    print(f"\rProcessing step {i}/5", end="", flush=True)
+    time.sleep(0.5)
