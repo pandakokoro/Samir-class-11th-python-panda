@@ -1,0 +1,5 @@
+import time 
+
+for i in range(999):
+    time.sleep(0.1)
+    print(f"\rCounting: {i}", end="", flush=True)
